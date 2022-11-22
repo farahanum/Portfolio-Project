@@ -49,9 +49,9 @@
 
 	UPDATE dbo.books$
 	SET discounted_price = case
-							when discounted_price IS NULL then (price - (discount_rate *100))
-							else discounted_price
-						   end
+				when discounted_price IS NULL then (price - (discount_rate *100))
+				else discounted_price
+			       end
  
 --------------------------------------------------------------------------------------------------------------------
 
@@ -59,16 +59,16 @@
 
 	SELECT discount_rate, discounted_price, price,
 	case
-		when Price is NULL then (discounted_price/1- discount_rate)
-		else Price
+	  when Price is NULL then (discounted_price/1- discount_rate)
+	  else Price
 	end
 	from dbo.books$
 
 	UPDATE dbo.books$
 	SET price = case
-					when price IS NULL then (discounted_price / 1- discount_rate)
-					else price
-				end
+		     when price IS NULL then (discounted_price / 1- discount_rate)
+		     else price
+		    end
 --------------------------------------------------------------------------------------------------------------------
 
 -- Drop NULL values in discounted_price and Price rows
