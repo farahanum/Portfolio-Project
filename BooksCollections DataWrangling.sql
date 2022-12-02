@@ -33,6 +33,8 @@
 	Select top 1 (title), sum(price) as total
 	from dbo.books$
 	group by title
+	
+	
 	order by total DESC
 
 -------------------------------------------------------------------------------------------------------------------- 
@@ -81,3 +83,5 @@
    from top10_reviews
    where rank_of_reviews BETWEEN 1 AND 10
    order by 2 DESC, rank_of_reviews
+   
+   
