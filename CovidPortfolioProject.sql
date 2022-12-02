@@ -120,3 +120,4 @@ join PortfolioProject..CovidVaccination$ vac
 Create View GlobalNumber as
 Select SUM(new_cases)as Total_cases, SUM(CAST(new_deaths as int)) as Total_death, SUM(CAST(new_deaths as int))/SUM(new_cases)*100 as DeathPercentage
 from PortfolioProject..Sheet1$
+
