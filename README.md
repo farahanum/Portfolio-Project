@@ -1,2 +1,3 @@
 # Data Analyst Portfolio-Project
-This repository compiled all code and queries for data cleaning and data wrangling portfolio project that I created using SQL server
+A collection of SQL data cleaning and exploration projects built using SQL Server.
+This repository includes hands-on exercises such as cleaning raw datasets, handling missing values, transforming columns, removing duplicates, standardizing formats, and performing exploratory queries.
